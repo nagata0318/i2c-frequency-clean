@@ -1,6 +1,6 @@
 {
   "name": "i2c-frequency",
-  "version": "v95",
+  "version": "v96",
   "description": "I2C frequency control for micro:bit",
   "files": [
     "i2c.ts",
