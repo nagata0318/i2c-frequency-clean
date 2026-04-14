@@ -1,24 +1,12 @@
 {
   "name": "i2c-frequency",
   "version": "v90",
-  "description": "I2C frequency control",
-  "license": "MIT",
+  "description": "I2C frequency control for micro:bit",
+  "files": [
+    "i2c.ts",
+    "i2c.cpp"
+  ],
   "dependencies": {
     "core": "*"
-  },
-  "files": [
-    "i2c.ts"
-  ],
-  "testFiles": [
-    "test.ts"
-  ],
-  "yotta": {
-    "config": {
-      "microbit-dal": {
-        "bluetooth": {
-          "enabled": 0
-        }
-      }
-    }
   }
 }
