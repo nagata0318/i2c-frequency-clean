@@ -1,6 +1,6 @@
 {
   "name": "i2c-frequency",
-  "version": "v9",
+  "version": "v90",
   "description": "I2C frequency control",
   "license": "MIT",
   "dependencies": {
