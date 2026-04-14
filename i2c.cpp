@@ -1,30 +1,22 @@
 #include "pxt.h"
-
-using namespace pxt;
+#include "MicroBit.h"
 
 namespace I2CEx {
 
-    // CODALから直接取得（安全）
-    CODAL_I2C* getI2C() {
-        return uBit.i2c;
-    }
-
     void _setFrequency(int hz) {
 
-        // 安全制限
+        // 周波数制限（安全側）
         if (hz <= 100000) {
             hz = 100000;
-        } else if (hz <= 250000) {
-            hz = 250000;
+        } else if (hz <= 400000) {
+            hz = 400000;
         } else {
             hz = 400000;
         }
 
-        // I2C取得
-        CODAL_I2C* i2c = getI2C();
-
-        if (i2c) {
-            i2c->setFrequency(hz);
+        // CODAL I2Cへ直接アクセス
+        if (uBit.i2c.setFrequency) {
+            uBit.i2c.setFrequency(hz);
         }
     }
 }
