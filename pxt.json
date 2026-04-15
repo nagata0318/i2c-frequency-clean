@@ -1,13 +1,16 @@
 {
-  "name": "i2c-frequency",
-  "version": "0.0.2",
-  "description": "Set I2C frequency",
-  "files": [
-    "i2c.ts",
-    "i2c.cpp"
-  ],
+  "name": "i2c-frequency-clean",
+  "version": "0.0.1",
+  "description": "I2C frequency shim test",
   "dependencies": {
     "core": "*"
   },
-  "supportedTargets": ["microbit"]
+  "files": [
+    "main.ts",
+    "i2c.ts",
+    "i2c.cpp"
+  ],
+  "supportedTargets": [
+    "microbit"
+  ]
 }
