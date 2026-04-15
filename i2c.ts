@@ -9,6 +9,7 @@ namespace I2CEx {
         _setFrequency(freq)
     }
 
+    // ★ここが最重要ポイント
     //% shim=I2CEx::_setFrequency
-    function _setFrequency(freq: number): void;
+    function _setFrequency(freq: number): void; // ← セミコロンのみ
 }
