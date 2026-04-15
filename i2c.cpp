@@ -9,5 +9,7 @@ namespace I2CEx {
         #else
             uBit.i2c.frequency(freq);
         #endif
+
     }
+
 }
