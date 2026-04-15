@@ -1,12 +1,11 @@
 {
   "name": "i2c-frequency",
-  "version": "v101",
-  "description": "I2C frequency control for micro:bit",
+  "version": "0.0.1",
+  "description": "Set I2C frequency",
   "files": [
     "i2c.ts",
     "i2c.cpp"
   ],
-  "dependencies": {
-    "core": "*"
-  }
+  "public": true,
+  "supportedTargets": ["microbit"]
 }
