@@ -10,7 +10,5 @@ namespace I2CEx {
     }
 
     //% shim=I2CEx::_setFrequency
-    function _setFrequency(freq: number): void {
-        // C++側に転送
-    }
+    function _setFrequency(freq: number): void;
 }
